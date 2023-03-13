@@ -1,0 +1,456 @@
+@media (max-width: 1400px)
+	.container
+		max-width: 1200px
+	.models
+		&__item-img
+			max-width: 560px
+	.stock, .complect
+		&__item__info
+			width: 70%
+			padding-top: 25px
+			&__block
+				&_character
+					margin-top: 20px
+					gap: 70px
+				&:last-child
+					margin-top: 20px
+			&-title
+				font-size: 22px
+				line-height: 30px
+			&-price
+				font-size: 20px
+				line-height: 29px
+			&-credit
+				font-size: 19px
+	.tradein
+		&__item-icon_5 img
+			width: 75px
+			height: 75px
+	.complect
+		&__item__info
+			padding: 30px 30px 0 30px
+			width: 70%
+			&__block
+				&_character
+					margin-top: 40px
+					gap: 30px
+				&:last-child
+					margin-top: 40px
+
+	
+@media (max-width: 1200px)
+	.container
+		max-width: 960px
+	.promo
+		background: url(../img/promo/bg_1200.png) center center/cover no-repeat
+		height: 760px
+		&__title
+			font-size: 52px
+			line-height: 58px
+		&__subtitle
+			font-size: 20px
+			line-height: 36px
+	.models
+		&__item-img
+			max-width: 440px
+	.stock, .complect
+		&__item__info
+			padding-top: 10px
+			&__block
+				&_character:last-child
+					margin-top: 10px
+	.button__stock
+		width: 250px
+	.tradein
+		&__item-icon_5 img
+			width: 60px
+			height: 60px
+		&__descr, &__item-descr
+			font-size: 17px
+			line-height: 140%
+		&__item-descr
+			margin-top: 20px
+			line-height: 120%
+	.complect
+		&__item__info
+			padding: 10px 30px 0 30px
+			&__block
+				&_character:last-child
+					margin-top: 40px
+	.contacts
+		&__card
+			right: 50px
+			width: 400px
+			height: 520px
+			padding: 40px
+			&__social
+				margin-bottom: 30px
+	.footer
+		height: 450px
+		&__menu, &__info
+			&-title
+				font-size: 23px
+				line-height: 33px
+			&__list-link, &-address, &-ogrn, &-inn
+				font-size: 18px
+		&__info
+			max-width: 400px
+	.modal
+		width: 500px
+		height: 600px
+			
+@media (max-width: 992px)
+	.container
+		max-width: 767px
+	.header
+		&__text
+			gap: 25px
+			font-size: 15px
+			line-height: 24px
+	.button__header
+		width: 190px
+	.promo
+		background: url(../img/promo/bg_992.png) center center/cover no-repeat
+		height: 600px
+		padding-top: 20px
+		&__inner
+			display: block
+		&__title, &__subtitle
+			color: rgba(0, 0, 0, .9)
+		&__subtitle
+			font-weight: 700
+			margin-top: 420px
+	.advantages
+		&__item-text
+			font-size: 17px
+	.models
+		&__item-img
+			max-width: 350px
+	.stock, .complect
+		&__item
+			display: block
+			margin-top: 40px
+		&__item__info
+			width: 100%
+			padding: 30px 0 30px 0
+			&__block
+				&_character
+					gap: 100px
+					margin-top: 30px
+				&:last-child
+					margin-top: 30px
+	.tradein
+		&__item-icon_5 img
+			width: 45px
+			height: 45px
+	.complect
+		&__item__info__block_character
+			gap: 50px
+	.footer
+		height: 400px
+		&__icon
+			width: 25%
+		&__menu, &__info
+			&-title
+				font-size: 20px
+				line-height: 30px
+			&__list-link, &-address, &-ogrn, &-inn
+				font-size: 16px
+		&__info
+			max-width: 300px
+	.modal
+		width: 400px
+		height: 500px
+		padding-top: 20px
+		&__close
+			top: 20px
+			right: 20px
+		&__title
+			font-size: 22px
+			line-height: 30px
+			margin-bottom: 20px
+		&__form
+			input 
+				width: 300px
+				height: 70px
+				padding: 20px 25px
+				&:nth-child(2)
+					margin-bottom: 30px
+		&__accept
+			margin-top: 30px
+			&-descr
+				font-size: 15px
+		.button__submit
+			width: 300px
+			font-size: 18px
+
+@media (max-width: 767px)
+	.header
+		padding-top: 35px
+		&__logo
+			display: none
+		&__logo-media, .hamburger, &__close
+			display: block
+		&__close
+			margin-bottom: 60px
+		&__block
+			padding: 40px 0 0 30px
+			position: absolute
+			width: 40%
+			height: 100%
+			display: block
+			top: 0
+			right: -100%
+			z-index: 100
+			background-color: #000
+			position: fixed
+			transition: .5s all
+			&_active
+				right: 0
+		&__text
+			display: block
+			margin-bottom: 50px
+			font-size: 17px
+			&-contacts
+				margin-bottom: 30px
+	.promo
+		background: url(../img/promo/bg_767.png) center center/cover no-repeat
+		height: 500px
+		padding-top: 50px
+		&__title, &__subtitle
+			color: #fff
+		&__subtitle
+			margin-top: 300px
+	.advantages
+		&__item-text
+			font-size: 13px
+	.models
+		&__inner
+			display: block
+			margin-top: 0
+			&:last-child
+				margin-top: 0
+		&__item
+			margin-top: 50px
+			&-img
+				max-width: 100%
+	.tradein
+		&__item-icon_5 img
+			width: 80px
+			height: 80px
+		&__inner
+			display: block
+		&__item
+			display: flex
+			gap: 30px
+		&__descr, &__item-descr
+			font-size: 19px
+			line-height: 140%
+		&__item-descr
+			margin-top: 20px
+			line-height: 120%
+	.contacts
+		&__card
+			padding: 30px
+			right: 30px
+			width: 350px
+			height: 450px
+			&-title
+				font-size: 24px
+				line-height: 30px
+			&-address, &-address, &-phone, &-times, &-more
+				margin-top: 20px
+				font-size: 18px
+			&__social
+				margin-bottom: 30px
+	.button__contacts__card
+		width: 250px
+	.footer
+		padding-top: 70px
+		&__icon
+			display: none
+
+@media (max-width: 575px)
+	.header
+		&__block
+			width: 50%
+	.promo
+		background: url(../img/promo/bg_575.png) center center/cover no-repeat
+		height: 353px
+		padding-top: 170px
+		&__subtitle
+			margin-top: 30px
+	.advantages
+		&__inner
+			display: block
+		&__item
+			display: flex
+			gap: 30px
+			align-items: center
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+		&__item-text
+			margin-top: 0
+			font-size: 16px
+	.stock, .complect
+		&__item__info
+			&-title
+				max-width: 60%
+				font-size: 20px
+			&-price
+				font-size: 18px
+			&__block
+				&_character
+					gap: 60px
+			&__character
+				&-title
+					font-size: 18px
+			&-credit
+				font-size: 17px
+	.complect
+		&__item__info__block_character
+			gap: 20px
+	.contacts
+		&__card
+			right: 50%
+			transform: translate(50%, -50%)
+	.footer
+		&__copy, &__policy a
+			font-size: 14px
+
+@media (max-width: 480px)
+	.title
+		font-size: 34px
+	.header
+		&__block
+			padding: 40px 0 0 20px
+			width: 60%
+		&__text
+			font-size: 15px
+	.button__header
+		width: 160px
+		font-size: 17px
+	.promo
+		background: url(../img/promo/bg_480.png) center center/cover no-repeat
+		height: 270px
+		padding-top: 70px
+		&__title
+			font-size: 40px
+			line-height: 50px
+		&__subtitle
+			font-size: 17px
+			line-height: 30px
+			margin-top: 10px
+			span
+				display: none
+	.models
+		&__item-title
+			font-size: 22px
+			line-height: 32px
+	.stock, .complect
+		&__item__info
+			&-title
+				font-size: 19px
+			&-price
+				font-size: 17px
+			&__block
+				&_character
+					gap: 30px
+			&__character
+				&-title
+					font-size: 13px
+			&-credit
+				display: none
+	.complect
+		&__item__info__block_character
+			gap: 10px
+	.button__stock
+		width: 220px
+		font-size: 16px
+	.tradein
+		&__descr, &__item-descr
+			font-size: 17px
+	.button__complect
+		width: 250px
+		font-size: 17px
+	.contacts
+		&__map
+			iframe
+				height: 450px
+		&__card
+			margin-top: 20px
+			position: static
+			transform: translate(0, 0)
+			width: 100%
+			background-color: #F7F7F7
+			padding: 20px
+	.footer
+		height: 440px
+		&__menu, &__info
+			&-title
+				font-size: 18px
+				line-height: 26px
+			&__list-link, &-address, &-ogrn, &-inn
+				font-size: 14px
+		&__info
+			max-width: 170px
+		&__copy, &__policy a
+			font-size: 10px
+	.modal
+		width: 310px
+		height: 400px
+		padding: 20px 10px 0 10px
+		&__title
+			font-size: 16px
+			line-height: 30px
+			margin-bottom: 20px
+			span
+				display: none
+		&__form
+			input 
+				width: 250px
+				height: 50px
+				padding: 20px 25px
+				font-size: 16px
+				&:nth-child(2)
+					margin-bottom: 30px
+		&__accept
+			margin-top: 15px
+			&-check
+				width: 15px
+				height: 15px
+			&-descr
+				font-size: 13px
+				span
+					display: none
+		.button__submit
+			width: 250px
+			font-size: 16px
+
+
+@media (max-width: 350px)
+	.promo
+		background: url(../img/promo/bg_350.png) center center/cover no-repeat
+		height: 230px
+		padding-top: 30px
+		&__title
+			font-size: 34px
+		&__subtitle
+			font-size: 15px
+	.contacts
+		&__card
+			&-title
+				font-size: 22px
+				line-height: 26px
+			&-address, &-address, &-phone, &-times, &-more
+				font-size: 16px
+	.button__contacts__card
+		width: 220px
+		font-size: 17px
+	.footer
+		&__info
+			max-width: 150px
+		&__copy, &__policy a
+			font-size: 9px
+

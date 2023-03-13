@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChanganAuto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap&_v=20230306193432"
+rel="stylesheet">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.min.css?_v=20230306193432">
+</head>
+
+<body>
+<header class="header">
+<div class="container">
+<div class="header__inner">
+<div class="header__logo-media">
+<picture>
+<source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="media logo">
+</picture>
+</div>
+<div class="header__block">
+<div class="header__logo">
+<picture>
+<source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="main logo">
+</picture>
+</div>
+<div class="header__close">
+<picture>
+<source srcset="img/header/close.webp" type="image/webp"><img src="img/header/close.png" alt="close icon">
+</picture>
+</div>
+<div class="header__text">
+<div class="header__text-contacts">
+Отдел продаж: <br>
++ 7 (495) 021-72-79 <br>
+Все дни с 8:30 до 21:00
+</div>
+<div class="header__text-address">
+Приезжайте в гости: <br>
+Москва <br>
+ул. Горбунова, 14
+</div>
+</div>
+<button class="button button__header" data-modal="consultation">Заказать звонок</button>
+</div>
+<div class="hamburger">
+<picture>
+<source srcset="img/header/hamburger.webp" type="image/webp"><img src="img/header/hamburger.png" alt="hamburger icon">
+</picture>
+</div>
+</div>
+</div>
+</header>
+
+<div class="promo">
+<div class="container">
+<div class="promo__inner">
+<div class="promo__title">Новый Changan</div>
+<div class="promo__subtitle">
+Продажи Changan с выгодой до 770 000₽ <span> <br> </span>
+и гарантией 5 лет
+</div>
+</div>
+</div>
+</div>
+
+<div class="advantages">
+<div class="container">
+<div class="advantages__title title">Наши преимущества</div>
+<div class="advantages__inner">
+<div class="advantages__item">
+<div class="advantages__item-icon">
+<picture>
+<source srcset="img/advantages/icon1.webp" type="image/webp"><img src="img/advantages/icon1.png"
+alt="advantages icon">
+</picture>
+</div>
+<div class="advantages__item-text">
+Дилер №1 в Москве <br>
+по итогам 2020 года
+</div>
+</div>
+<div class="advantages__item">
+<div class="advantages__item-icon">
+<picture>
+<source srcset="img/advantages/icon2.webp" type="image/webp"><img src="img/advantages/icon2.png"
+alt="advantages icon">
+</picture>
+</div>
+<div class="advantages__item-text">
+Доступен Trade-in <br>
+и рассрочка в 0%
+</div>
+</div>
+<div class="advantages__item">
+<div class="advantages__item-icon">
+<picture>
+<source srcset="img/advantages/icon3.webp" type="image/webp"><img src="img/advantages/icon3.png"
+alt="advantages icon">
+</picture>
+</div>
+<div class="advantages__item-text">
+Более 60 авто <br>
+в наличии с ПТС
+</div>
+</div>
+<div class="advantages__item">
+<div class="advantages__item-icon">
+<picture>
+<source srcset="img/advantages/icon4.webp" type="image/webp"><img src="img/advantages/icon4.png"
+alt="advantages icon">
+</picture>
+</div>
+<div class="advantages__item-text">
+Бонусы при покупке <br>
+в кредит и трейд-ин
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="models">
+<div class="container">
+<div class="models__title title">Модельный ряд</div>
+<div class="models__inner">
+<div class="models__item">
+<div class="models__item-title">Changan CS75FL</div>
+<div class="models__item-img">
+<picture>
+<source media="(max-width:767px)" srcset="img/models/item1_media.png">
+<img src="img/models/item1.png" alt="models img">
+</picture>
+</div>
+</div>
+<div class="models__item">
+<div class="models__item-title">Changan CS55</div>
+<div class="models__item-img">
+<picture>
+<source media="(max-width:767px)" srcset="img/models/item2_media.png">
+<img src="img/models/item2.png" alt="models img">
+</picture>
+</div>
+</div>
+</div>
+<div class="models__inner">
+<div class="models__item">
+<div class="models__item-title">Changan CS35PLUS</div>
+<div class="models__item-img">
+<picture>
+<source media="(max-width:767px)" srcset="img/models/item3_media.png">
+<img src="img/models/item3.png" alt="models img">
+</picture>
+</div>
+</div>
+<div class="models__item">
+<div class="models__item-title">Changan UNI-K</div>
+<div class="models__item-img">
+<picture>
+<source media="(max-width:767px)" srcset="img/models/item4_media.png">
+<img src="img/models/item4.png" alt="models img">
+</picture>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stock" id="site_stock">
+<div class="container">
+<div class="stock__title title">Автомобили в наличии</div>
+<div class="stock__item stock__item_first">
+<div class="stock__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/stock/cars/item1_media.png">
+<img src="img/stock/cars/item1.png" alt="stock img">
+</picture>
+</div>
+<div class="stock__item__info">
+<div class="stock__item__info__block">
+<div class="stock__item__info-title">Changan CS75FL</div>
+<div class="stock__item__info-price">от 2 005 559 руб.</div>
+</div>
+<div class="stock__item__info__block_character">
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item1.webp" type="image/webp"><img src="img/stock/character/item1.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">1.8 л / 150 л.с.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item2.webp" type="image/webp"><img src="img/stock/character/item2.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2WD</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item3.webp" type="image/webp"><img src="img/stock/character/item3.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">6АКПП</div>
+</div>
+</div>
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item4.webp" type="image/webp"><img src="img/stock/character/item4.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item5.webp" type="image/webp"><img src="img/stock/character/item5.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Бензин</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item6.webp" type="image/webp"><img src="img/stock/character/item6.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="stock__item__info__block">
+<button class="button button__stock" data-modal="consultation">Смотреть комплектации</button>
+<div class="stock__item__info-credit">Рассчитать в кредит</div>
+</div>
+</div>
+</div>
+<div class="stock__item">
+<div class="stock__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/stock/cars/item2_media.png">
+<img src="img/stock/cars/item2.png" alt="stock img">
+</picture>
+</div>
+<div class="stock__item__info">
+<div class="stock__item__info__block">
+<div class="stock__item__info-title">Changan CS55</div>
+<div class="stock__item__info-price">от 1 800 000 руб.</div>
+</div>
+<div class="stock__item__info__block_character">
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item1.webp" type="image/webp"><img src="img/stock/character/item1.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">1.5 л / 143 л.с.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item2.webp" type="image/webp"><img src="img/stock/character/item2.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2WD</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item3.webp" type="image/webp"><img src="img/stock/character/item3.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">6АКПП</div>
+</div>
+</div>
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item4.webp" type="image/webp"><img src="img/stock/character/item4.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item5.webp" type="image/webp"><img src="img/stock/character/item5.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Бензин</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item6.webp" type="image/webp"><img src="img/stock/character/item6.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="stock__item__info__block">
+<button class="button button__stock" data-modal="consultation">Смотреть комплектации</button>
+<div class="stock__item__info-credit">Рассчитать в кредит</div>
+</div>
+</div>
+</div>
+<div class="stock__item">
+<div class="stock__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/stock/cars/item3_media.png">
+<img src="img/stock/cars/item3.png" alt="stock img">
+</picture>
+</div>
+<div class="stock__item__info">
+<div class="stock__item__info__block">
+<div class="stock__item__info-title">Changan UNI-K</div>
+<div class="stock__item__info-price">от 3 000 000 руб.</div>
+</div>
+<div class="stock__item__info__block_character">
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item1.webp" type="image/webp"><img src="img/stock/character/item1.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2.0 л / 226 л.с.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item2.webp" type="image/webp"><img src="img/stock/character/item2.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2WD, 4WD</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item3.webp" type="image/webp"><img src="img/stock/character/item3.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">8АКПП</div>
+</div>
+</div>
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item4.webp" type="image/webp"><img src="img/stock/character/item4.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item5.webp" type="image/webp"><img src="img/stock/character/item5.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Бензин</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item6.webp" type="image/webp"><img src="img/stock/character/item6.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="stock__item__info__block">
+<button class="button button__stock" data-modal="consultation">Смотреть комплектации</button>
+<div class="stock__item__info-credit">Рассчитать в кредит</div>
+</div>
+</div>
+</div>
+<div class="stock__item">
+<div class="stock__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/stock/cars/item4_media.png">
+<img src="img/stock/cars/item4.png" alt="stock img">
+</picture>
+</div>
+<div class="stock__item__info">
+<div class="stock__item__info__block">
+<div class="stock__item__info-title">Changan CS35PLUS</div>
+<div class="stock__item__info-price">от 1 300 000 руб.</div>
+</div>
+<div class="stock__item__info__block_character">
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item1.webp" type="image/webp"><img src="img/stock/character/item1.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">1.6 л / 128 л.с.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item2.webp" type="image/webp"><img src="img/stock/character/item2.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2WD, 4WD</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item3.webp" type="image/webp"><img src="img/stock/character/item3.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">6АКПП</div>
+</div>
+</div>
+<div class="stock__item__info__character">
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item4.webp" type="image/webp"><img src="img/stock/character/item4.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item5.webp" type="image/webp"><img src="img/stock/character/item5.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Бензин</div>
+</div>
+<div class="stock__item__info__character__block">
+<div class="stock__item__info__character-icon">
+<picture>
+<source srcset="img/stock/character/item6.webp" type="image/webp"><img src="img/stock/character/item6.png"
+alt="character icon">
+</picture>
+</div>
+<div class="stock__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="stock__item__info__block">
+<button class="button button__stock" data-modal="consultation">Смотреть комплектации</button>
+<div class="stock__item__info-credit">Рассчитать в кредит</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="tradein" id="site_tradein">
+<div class="container">
+<div class="tradein__title title">Trade in</div>
+<div class="tradein__descr">
+Поможем вам быстро и комфортно обменять автомобиль <br> на любой другой, представленный компанией.
+</div>
+<div class="tradein__inner">
+<div class="tradein__item">
+<div class="tradein__item-icon">
+<picture>
+<source media="(max-width:767px)" srcset="img/tradein/item1_media.png">
+<img src="img/tradein/item1.png" alt="tradein icon">
+</picture>
+</div>
+<div class="tradein__item-descr">Выбор нового <br> автомобиля</div>
+</div>
+<div class="tradein__item">
+<div class="tradein__item-icon">
+<picture>
+<source media="(max-width:767px)" srcset="img/tradein/item2_media.png">
+<img src="img/tradein/item2.png" alt="tradein icon">
+</picture>
+</div>
+<div class="tradein__item-descr">Заполнение <br> анкеты</div>
+</div>
+<div class="tradein__item">
+<div class="tradein__item-icon">
+<picture>
+<source media="(max-width:767px)" srcset="img/tradein/item3_media.png">
+<img src="img/tradein/item3.png" alt="tradein icon">
+</picture>
+</div>
+<div class="tradein__item-descr">Диагностика <br> и оценка вашего авто</div>
+</div>
+<div class="tradein__item">
+<div class="tradein__item-icon">
+<picture>
+<source media="(max-width:767px)" srcset="img/tradein/item4_media.png">
+<img src="img/tradein/item4.png" alt="tradein icon">
+</picture>
+</div>
+<div class="tradein__item-descr">Заключение <br> договора</div>
+</div>
+<div class="tradein__item">
+<div class="tradein__item-icon tradein__item-icon_5">
+<picture>
+<source srcset="img/tradein/item5.webp" type="image/webp"><img src="img/tradein/item5.png" alt="tradein icon">
+</picture>
+</div>
+<div class="tradein__item-descr">Получение <br> нового авто</div>
+</div>
+</div>
+<button class="button button__tradein" data-modal="consultation">Отправить заявку</button>
+</div>
+</div>
+
+<div class="complect" id="site_complect">
+<div class="container">
+<div class="complect__title title">Комплектации</div>
+<div class="complect__item complect__item_first">
+<div class="complect__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/complect/cars/item1_media.png">
+<img src="img/complect/cars/item1.png" alt="stock img">
+</picture>
+</div>
+<div class="complect__item__info">
+<div class="complect__item__info__block">
+<div class="complect__item__info-title">Changan CS75FL 1 Рестайлинг</div>
+<div class="complect__item__info-price">2 300 000 руб.</div>
+</div>
+<div class="complect__item__info__block_character">
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item1.webp" type="image/webp"><img
+src="img/complect/character/item1.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">1.8 л / 150 л.с.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item2.webp" type="image/webp"><img
+src="img/complect/character/item2.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2WD</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item3.webp" type="image/webp"><img
+src="img/complect/character/item3.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">6АКПП</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item4.webp" type="image/webp"><img
+src="img/complect/character/item4.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Бензин</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item5.webp" type="image/webp"><img
+src="img/complect/character/item5.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item6.webp" type="image/webp"><img
+src="img/complect/character/item6.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="complect__item__info__block">
+<button class="button button__complect" data-modal="consultation">Записаться на тест драйв</button>
+</div>
+</div>
+</div>
+<div class="complect__item">
+<div class="complect__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/complect/cars/item2_media.png">
+<img src="img/complect/cars/item2.png" alt="stock img">
+</picture>
+</div>
+<div class="complect__item__info">
+<div class="complect__item__info__block">
+<div class="complect__item__info-title">Changan CS75FL 1 Рестайлинг</div>
+<div class="complect__item__info-price">2 300 000 руб.</div>
+</div>
+<div class="complect__item__info__block_character">
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item1.webp" type="image/webp"><img
+src="img/complect/character/item1.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">1.8 л / 150 л.с.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item2.webp" type="image/webp"><img
+src="img/complect/character/item2.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2WD</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item3.webp" type="image/webp"><img
+src="img/complect/character/item3.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">6АКПП</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item4.webp" type="image/webp"><img
+src="img/complect/character/item4.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Бензин</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item5.webp" type="image/webp"><img
+src="img/complect/character/item5.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item6.webp" type="image/webp"><img
+src="img/complect/character/item6.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="complect__item__info__block">
+<button class="button button__complect" data-modal="consultation">Записаться на тест драйв</button>
+</div>
+</div>
+</div>
+<div class="complect__item">
+<div class="complect__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/complect/cars/item3_media.png">
+<img src="img/complect/cars/item3.png" alt="stock img">
+</picture>
+</div>
+<div class="complect__item__info">
+<div class="complect__item__info__block">
+<div class="complect__item__info-title">Changan CS75FL 1 Рестайлинг</div>
+<div class="complect__item__info-price">2 450 000 руб.</div>
+</div>
+<div class="complect__item__info__block_character">
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item1.webp" type="image/webp"><img
+src="img/complect/character/item1.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">1.8 л / 150 л.с.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item2.webp" type="image/webp"><img
+src="img/complect/character/item2.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2WD</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item3.webp" type="image/webp"><img
+src="img/complect/character/item3.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">6АКПП</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item4.webp" type="image/webp"><img
+src="img/complect/character/item4.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Бензин</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item5.webp" type="image/webp"><img
+src="img/complect/character/item5.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item6.webp" type="image/webp"><img
+src="img/complect/character/item6.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Серый</div>
+</div>
+</div>
+</div>
+<div class="complect__item__info__block">
+<button class="button button__complect" data-modal="consultation">Записаться на тест драйв</button>
+</div>
+</div>
+</div>
+<div class="complect__item">
+<div class="complect__item-img">
+<picture>
+<source media="(max-width:992px)" srcset="img/complect/cars/item4_media.png">
+<img src="img/complect/cars/item4.png" alt="stock img">
+</picture>
+</div>
+<div class="complect__item__info">
+<div class="complect__item__info__block">
+<div class="complect__item__info-title">Changan CS35PLUS </div>
+<div class="complect__item__info-price">1 690 000 руб.</div>
+</div>
+<div class="complect__item__info__block_character">
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item1.webp" type="image/webp"><img
+src="img/complect/character/item1.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">1.8 л / 150 л.с.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item2.webp" type="image/webp"><img
+src="img/complect/character/item2.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2WD</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item3.webp" type="image/webp"><img
+src="img/complect/character/item3.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">6АКПП</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item4.webp" type="image/webp"><img
+src="img/complect/character/item4.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Бензин</div>
+</div>
+</div>
+<div class="complect__item__info__character">
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item5.webp" type="image/webp"><img
+src="img/complect/character/item5.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">2022 г.в.</div>
+</div>
+<div class="complect__item__info__character__block">
+<div class="complect__item__info__character-icon">
+<picture>
+<source srcset="img/complect/character/item6.webp" type="image/webp"><img
+src="img/complect/character/item6.png" alt="character icon">
+</picture>
+</div>
+<div class="complect__item__info__character-title">Белый</div>
+</div>
+</div>
+</div>
+<div class="complect__item__info__block">
+<button class="button button__complect" data-modal="consultation">Записаться на тест драйв</button>
+</div>
+</div>
+</div>
+<div class="complect__more">Загрузить ещё</div>
+</div>
+</div>
+
+<div class="contacts" id="site_contacts">
+<div class="container">
+<div class="contacts__title title">Контакты</div>
+<div class="contacts__map">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.9497920199137!2d37.38118663881123!3d55.724624705685684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54f000e7e2e4f%3A0x7e0e8d58744e9f48!2z0JPQvtGA0LHRg9C90L7QstCwIHnQu9C40YbQsCwgMTQsINCc0L7RgdC60LLQsCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQzMDI1!5e0!3m2!1sru!2sru!4v1675719537883!5m2!1sru!2sru"
+width="100%" height="812px" style="border:0;" allowfullscreen="" loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+<div class="contacts__card">
+<div class="contacts__card-title">ООО “Кунцево Авто”</div>
+<div class="contacts__card-address">Москва, ул. Горбунова, д. 14</div>
+<div class="contacts__card-phone">
+<a href="tel:+74952557116">+7 (495) 255-71-16</a>
+</div>
+<div class="contacts__card-times">Все дни с 8:30 до 21:00</div>
+<div class="contacts__card__social">
+<div class="contacts__card-telegram">
+<a href="#">
+<picture>
+<source srcset="img/contacts/telegram.webp" type="image/webp"><img src="img/contacts/telegram.png"
+alt="telegram icon">
+</picture>
+</a>
+</div>
+<div class="contacts__card-youtube">
+<a href="#">
+<picture>
+<source srcset="img/contacts/youtube.webp" type="image/webp"><img src="img/contacts/youtube.png"
+alt="youtube icon">
+</picture>
+</a>
+</div>
+</div>
+<button class="button button__contacts__card" data-modal="consultation">Заказать звонок</button>
+<div class="contacts__card-more">Подробные условия акции</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="overlay">
+<div class="modal" id="consultation">
+<div class="modal__close">
+<picture>
+<source srcset="img/modal/close.webp" type="image/webp"><img src="img/modal/close.png" alt="close icon">
+</picture>
+</div>
+<div class="modal__title">
+Оставьте контакты <span> <br> </span> и получите лучшее <span> <br> </span> предложение!
+</div>
+<form class="modal__form" action="#">
+<input name="name" required placeholder="Ваше имя" type="text" autocomplete="off">
+<input name="phone" required placeholder="Номер телефона" type="number" autocomplete="off">
+<button class="button button__submit">Отправить</button>
+</form>
+<div class="modal__accept">
+<input class="modal__accept-check" type="checkbox" checked>
+<div class="modal__accept-descr">
+Нажимая на кнопку “Отправить”, <span> <br> </span>
+вы соглашаетесь с условиями обработки <span> <br> </span>
+персональных данных
+</div>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="footer__inner">
+<div class="footer__icon">
+<picture>
+<source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt="footer logo">
+</picture>
+</div>
+<div class="footer__menu">
+<div class="footer__menu-title">Меню</div>
+<ul class="footer__menu__list">
+<li class="footer__menu__list-link"><a href="#site_stock">Автомобили в наличии</a></li>
+<li class="footer__menu__list-link"><a href="#site_tradein">Trade in</a></li>
+<li class="footer__menu__list-link"><a href="#site_complect">Комплектации</a></li>
+<li class="footer__menu__list-link"><a href="#site_contacts">Контакты</a></li>
+</ul>
+</div>
+<div class="footer__info">
+<div class="footer__info-title">Юридическая информация</div>
+<div class="footer__info-address">
+Адрес: 143025, Московская область, город Одинцово, с. Немчиновка, ул. Московская дом 61, ком. 405
+</div>
+<div class="footer__info-ogrn">ОГРН: 1135032010300</div>
+<div class="footer__info-inn">ИНН: 5032271845</div>
+</div>
+</div>
+<div class="footer__inner">
+<div class="footer__copy">© Changan Automobile Group </div>
+<div class="footer__policy"><a href="#">Политика конфеденциальности</a></div>
+</div>
+</div>
+</footer>
+
+<script src="js/app.min.js?_v=20230306193432"></script>
+</body>
+
+</html>
