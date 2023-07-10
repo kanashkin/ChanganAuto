@@ -4,7 +4,7 @@
   "description": "Gulp сборка",
   "main": "gulpfile.js",
   "type": "module",
-  "homepage": "https://JordanBelfort1.github.io",
+  "homepage": "https://kanashkin.github.io",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
